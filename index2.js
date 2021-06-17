@@ -39,14 +39,37 @@ document.write(text.toUpperCase());
 document.write(" ");
 document.write(text.toLowerCase());
 
-document.write(text1.concat(text2));*/
+document.write(text1.concat(text2));
 document.write(text2.slice(6,8));
 
 var result = num > 30 ? "adult" : num < 18 ? "teenage" : "young" ;
-document.write(result);
+document.write(result);*/
 
 var c1 = ["a", "b"];
 var c2 = ["c", "d"];
 
 var c = c1.concat(c2);
 document.write(c);
+document.write("</br>");
+
+/*c.shift(); // opposite of pop
+document.write(c);
+
+c.unshift("yoo"); //opposite of push
+document.write(c);
+document.write("</br>");
+
+c.splice(1,2,"anything"); //(position,number of deleted elements,"added elements")
+document.write(c);
+document.write("</br>");
+
+c.splice(1,2); // removing more than 1 elements from a specific position
+document.write(c);*/
+
+var newarray = c.slice(1,3) ; //(1st element start of slicing, second element stop of slicing)
+
+document.write(newarray);
+document.write("</br>"); 
+
+
+
