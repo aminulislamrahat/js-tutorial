@@ -1,0 +1,15 @@
+.pera-style{
+    color: red;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: italic;
+
+
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    background-color: springgreen;
+
+}
