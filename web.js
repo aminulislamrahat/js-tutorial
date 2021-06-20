@@ -71,9 +71,38 @@ for(var i = 0; i<3 ;i++){
         var text = this.innerHTML;
         console.log(text);
         var audio = new Audio("sounds/"+text+".mp3");
-            audio.play();
+        audio.play();
+        var selectedButton = document.querySelector("." + text);
+        selectedButton.classList.add("anim");
+        setTimeout(function(){
+            selectedButton.classList.remove("anim");
+        },1000);
+
+        
+
+
     });
 
 }
     
+document.addEventListener("keypress", function(event){
 
+    var kb = event.key.toUpperCase();
+    var audio = new Audio("sounds/"+kb+".mp3");
+    audio.play();
+
+    var selectedButton = document.querySelector("." + kb);
+    selectedButton.classList.add("anim");
+    setTimeout(function(){
+        selectedButton.classList.remove("anim");
+    },1000);
+
+});
+
+
+const add = (x,y) => {
+    let sum = x+y;
+    document.write(`the sum is ${sum}`);
+}
+
+add(10,20);
